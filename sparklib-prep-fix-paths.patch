@@ -1,0 +1,22 @@
+--- a/sparklib_external.gpr
++++ b/sparklib_external.gpr
+@@ -11,7 +11,7 @@
+    -- Excluded_Source_Files (so that you only compile and analyse files from
+    -- the library that you need).
+ 
+-   for Source_Dirs use (SPARKlib_External'Project_Dir & "/../../include/spark");
++   for Source_Dirs use ("@INCLUDEDIR@/@NAME@");
+ 
+    package Compiler is
+       --  Enforce GNAT style checks, except for multiple blank lines which does
+--- a/sparklib_light_external.gpr
++++ b/sparklib_light_external.gpr
+@@ -14,7 +14,7 @@
+    -- Excluded_Source_Files (so that you only compile and analyse files from
+    -- the library that you need).
+ 
+-   for Source_Dirs use (SPARKlib_Light_External'Project_Dir & "/../../include/spark");
++   for Source_Dirs use ("@INCLUDEDIR@/@NAME@");
+ 
+    package Compiler renames SPARKlib_common.Compiler;
+ 
