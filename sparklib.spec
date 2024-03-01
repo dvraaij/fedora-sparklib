@@ -1,8 +1,8 @@
 # Upstream source information.
 %global upstream_owner        AdaCore
 %global upstream_name         SPARKlib
-%global upstream_commit_date  20230801
-%global upstream_commit       c2543114ce5ade62aad550e90de76f397804328f
+%global upstream_commit_date  20240226
+%global upstream_commit       6225949841ceb7e93560aced229852a385ce0e14
 %global upstream_shortcommit  %(c=%{upstream_commit}; echo ${c:0:7})
 
 Name:           sparklib
@@ -124,5 +124,8 @@ mkdir --parents %{buildroot}%{_datadir}/%{name}/templates
 ###############
 
 %changelog
+* Fri Mar 01 2024 Dennis van Raaij <dvraaij@fedoraproject.org> - 0^20240226git6225949-1
+- Updated to snapshot: Git commit 6225949, 2024-02-26.
+
 * Fri Aug 25 2023 Dennis van Raaij <dvraaij@fedoraproject.org> - 0^20230801gitc254311-1
 - New package, snapshot: Git commit c254311, 2023-08-01.
